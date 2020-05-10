@@ -26,17 +26,23 @@ make && make install
 上传到你的unimrcpsever编译安装包里面，就是解压unimrcpserver1.6时的安装包的plugins文件夹里面
 
 g++ -v 查看g++的版本
-gcc version 4.7.2 20121015 (Red Hat 4.7.2-5) (GCC) 
-如果低于4.7.2的g++版本请先更新升级，否则将无法编译通过
+gcc version 4.8.2 20121015 (Red Hat 4.8.2-5) (GCC) 
+如果低于4.8.2的g++版本请先更新升级，否则将无法编译通过
 
 把unimrcp-deps-1.6.0/libs 里面的
 apr 及 apr-util 依赖库建立一个软连接到 unimrcp-master/libs
+
+注意：最新版本必须更新以下两个服务才能使用
+需要更新freeswitch的unimrcp源码
+需要更新unimrcpserver的源码
+更新了实时语音识别，关于实时语音识别的使用请去我的csdn了解
+
 
 进入插件包，准备编译
 cd plugins/Alirecog
 进入 plugins/Alirecog/aliSdk2.0/NlsSdkCpp2.0/lib
 rm -rf 删除掉linux 的文件夹（方便，想麻烦不删也可以）
-然后再加压linux ，解压完成后 进入src
+然后再解压linux ，解压完成后 进入src
 plugins/Alirecog/src
 
 make clean
