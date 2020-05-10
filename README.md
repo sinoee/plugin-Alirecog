@@ -1,15 +1,8 @@
 # plugin-Alirecog
-基于阿里的语音识别sdk2.0编写的mrcp server 服务插件
-
-已在Centos6.9-64位编译通过 和 win10 运行编译通过
-
-目前并发2路没问题，因为阿里的免费服务只能并发2路
-
-如果你想体验 请参考以下步骤编译
+基于阿里的语音识别sdk2.0编写的mrcp server 服务插件，已在Centos6.9-64位编译通过 和 win10 运行编译通过。
 
 Linux：
-如果你没有安装unimrcpserver 请先安装它
-先安装unimrcp-deps-1.6.0依赖
+如果你没有安装unimrcpserver 请先安装unimrcp-deps-1.6.0
 cd unimrcp-deps-1.6.0
 ./build-dep-libs.sh
 
@@ -39,11 +32,9 @@ apr 及 apr-util 依赖库建立一个软连接到 unimrcp-master/libs
 
 
 进入插件包，准备编译
-cd plugins/Alirecog
-进入 plugins/Alirecog/aliSdk2.0/NlsSdkCpp2.0/lib
+cd plugins/Alirecog/aliSdk2.0/NlsSdkCpp2.0/lib
 rm -rf 删除掉linux 的文件夹（方便，想麻烦不删也可以）
-然后再解压linux ，解压完成后 进入src
-plugins/Alirecog/src
+然后再解压linux ，解压完成后 进入plugins/Alirecog/src
 
 make clean
 make
