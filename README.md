@@ -28,7 +28,7 @@ apr 及 apr-util 依赖库建立一个软连接到 unimrcp-master/libs
 注意：最新版本必须更新以下两个服务才能使用
 需要更新freeswitch的unimrcp源码
 需要更新unimrcpserver的源码
-更新了实时语音识别，关于实时语音识别的使用请去我的csdn了解
+更新了实时语音识别，关于实时语音识别的使用请去coffee 的csdn（https://blog.csdn.net/qq1779062842/article/details/103645047）了解
 
 
 进入插件包，准备编译
